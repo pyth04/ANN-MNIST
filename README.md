@@ -135,31 +135,37 @@ Where:
 ##### Step-by-Step Calculation
 
 1. **Identify the true labels ($y_i$):**
+   
    $$
    y = [0, 1, 0]
    $$
 
 2. **Identify the predicted probabilities ($p_i$):**
+   
    $$
    p = [0.2, 0.7, 0.1]
    $$
 
 3. **Calculate the logarithm of each predicted probability $log(p_i)$:**
+   
    $$
    \log(p) = [\log(0.2), \log(0.7), \log(0.1)] \approx [-1.6094, -0.3567, -2.3026]
    $$
 
 4. **Multiply each true label by the corresponding log probability $y_i \log(p_i)$:**
+   
    $$
    y \cdot \log(p) = [0 \cdot (-1.6094), 1 \cdot (-0.3567), 0 \cdot (-2.3026)] = [0, -0.3567, 0]
    $$
 
 5. **Sum the results:**
+   
    $$
    \sum (y \cdot \log(p)) = 0 + (-0.3567) + 0 = -0.3567
    $$
 
 6. **Negate the sum to get the final loss:**
+   
    $$
    \text{Loss} = -(-0.3567) = 0.3567
    $$
