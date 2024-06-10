@@ -1,5 +1,7 @@
 # Training an Artificial Neural Network on the MNIST Dataset
 
+![mnist-dataset](img/dataset.png)
+
 ## Introduction
 This project demonstrates the process of training an artificial neural network (ANN) to recognize handwritten digits using the MNIST dataset. Handwritten digit recognition is a fundamental problem in the field of computer vision and machine learning, often used as a benchmark to evaluate various machine learning models. The MNIST dataset, consisting of 70,000 grayscale images of handwritten digits (60,000 for training and 10,000 for testing), provides a robust platform for this purpose. Each image is 28x28 pixels, representing digits from 0 to 9.
 
