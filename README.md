@@ -324,14 +324,14 @@ model.summary()
    - **Layer Definition:** `Dense(512, activation='relu', kernel_initializer='he_uniform')`
    - **Input:** 784 (output of the Flatten layer)
    - **Neurons:** 512
-   - **Weights:** Each of the 784 input features is connected to each of the 512 neurons. Therefore, the total number of weights is \( 784 \times 512 = 401,408 \).
+   - **Weights:** Each of the 784 input features is connected to each of the 512 neurons. Therefore, the total number of weights is  $784 \times 512 = 401,408$.
    - **Biases:** Each neuron has one bias term. Therefore, the total number of biases is 512.
-   - **Total Parameters:** \( 401,408 \text{ (weights)} + 512 \text{ (biases)} = 401,920 \)
+   - **Total Parameters:** $401,408 \text{ (weights)} + 512 \text{ (biases)} = 401,920$
 
 3. **BatchNormalization Layer:**
    - **Layer Definition:** `BatchNormalization()`
    - **Parameters:** Batch normalization involves two parameters per neuron: one for scaling (gamma) and one for shifting (beta).
-   - **Total Parameters:** \( 512 \text{ (gamma)} + 512 \text{ (beta)} = 1,024 \)
+   - **Total Parameters:** $512 \text{ (gamma)} + 512 \text{ (beta)} = 1,024$
 
 4. **Dropout Layer:**
    - The `Dropout` layer does not have any parameters. It is used only during training to randomly set a fraction of input units to zero.
@@ -340,14 +340,14 @@ model.summary()
    - **Layer Definition:** `Dense(256, activation='relu', kernel_initializer='he_uniform')`
    - **Input:** 512 (output of the previous dense layer)
    - **Neurons:** 256
-   - **Weights:** Each of the 512 input features is connected to each of the 256 neurons. Therefore, the total number of weights is \( 512 \times 256 = 131,072 \).
+   - **Weights:** Each of the 512 input features is connected to each of the 256 neurons. Therefore, the total number of weights is $512 \times 256 = 131,072$.
    - **Biases:** Each neuron has one bias term. Therefore, the total number of biases is 256.
-   - **Total Parameters:** \( 131,072 \text{ (weights)} + 256 \text{ (biases)} = 131,328 \)
+   - **Total Parameters:** $131,072 \text{ (weights)} + 256 \text{ (biases)} = 131,328$
 
 6. **BatchNormalization Layer:**
    - **Layer Definition:** `BatchNormalization()`
    - **Parameters:** Two parameters per neuron: one for scaling (gamma) and one for shifting (beta).
-   - **Total Parameters:** \( 256 \text{ (gamma)} + 256 \text{ (beta)} = 512 \)
+   - **Total Parameters:** $256 \text{ (gamma)} + 256 \text{ (beta)} = 512$
 
 7. **Dropout Layer:**
    - The `Dropout` layer does not have any parameters.
@@ -356,14 +356,14 @@ model.summary()
    - **Layer Definition:** `Dense(128, activation='relu', kernel_initializer='he_uniform')`
    - **Input:** 256 (output of the previous dense layer)
    - **Neurons:** 128
-   - **Weights:** Each of the 256 input features is connected to each of the 128 neurons. Therefore, the total number of weights is \( 256 \times 128 = 32,768 \).
+   - **Weights:** Each of the 256 input features is connected to each of the 128 neurons. Therefore, the total number of weights is $256 \times 128 = 32,768$.
    - **Biases:** Each neuron has one bias term. Therefore, the total number of biases is 128.
-   - **Total Parameters:** \( 32,768 \text{ (weights)} + 128 \text{ (biases)} = 32,896 \)
+   - **Total Parameters:** $32,768 \text{ (weights)} + 128 \text{ (biases)} = 32,896$
 
 9. **BatchNormalization Layer:**
    - **Layer Definition:** `BatchNormalization()`
    - **Parameters:** Two parameters per neuron: one for scaling (gamma) and one for shifting (beta).
-   - **Total Parameters:** \( 128 \text{ (gamma)} + 128 \text{ (beta)} = 256 \)
+   - **Total Parameters:** $128 \text{ (gamma)} + 128 \text{ (beta)} = 256$
 
 10. **Dropout Layer:**
     - The `Dropout` layer does not have any parameters.
@@ -372,9 +372,9 @@ model.summary()
     - **Layer Definition:** `Dense(10, activation='softmax')`
     - **Input:** 128 (output of the previous dense layer)
     - **Neurons:** 10 (one for each class)
-    - **Weights:** Each of the 128 input features is connected to each of the 10 neurons. Therefore, the total number of weights is \( 128 \times 10 = 1,280 \).
+    - **Weights:** Each of the 128 input features is connected to each of the 10 neurons. Therefore, the total number of weights is $128 \times 10 = 1,280$.
     - **Biases:** Each neuron has one bias term. Therefore, the total number of biases is 10.
-    - **Total Parameters:** \( 1,280 \text{ (weights)} + 10 \text{ (biases)} = 1,290 \)
+    - **Total Parameters:** $1,280 \text{ (weights)} + 10 \text{ (biases)} = 1,290$
 
 #### Summary of Parameters per Layer
 
@@ -394,7 +394,9 @@ model.summary()
 
 To calculate the total number of parameters in the model, sum up the parameters from each layer:
 
-\[ 401,920 + 1,024 + 0 + 131,328 + 512 + 0 + 32,896 + 256 + 0 + 1,290 = 569,226 \]
+$$
+401,920 + 1,024 + 0 + 131,328 + 512 + 0 + 32,896 + 256 + 0 + 1,290 = 569,226
+$$
 
 ---
 
