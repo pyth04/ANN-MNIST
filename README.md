@@ -123,9 +123,11 @@ One-hot encoding is a technique used to convert categorical labels into a binary
 
 ##### Formula
 The categorical crossentropy loss for a single instance is given by:
+
 $$
 \text{Loss} = -\sum_{i=1}^{C} y_i \log(p_i)
 $$
+
 Where:
 - $y_i$ is the one-hot encoded true label for class $i$.
 - $p_i$ is the predicted probability for class $i$.
