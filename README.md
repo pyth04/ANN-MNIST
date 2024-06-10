@@ -240,7 +240,7 @@ plot_sample_images(X_train, y_train)
         - **`plt.axis('off')`:** Hides the axes for better visualization.
         - **`plt.show()`:** Displays the figure with the plotted images.
 
-![alt text](../img/dataset.png)
+![alt text](img/dataset.png)
 
 > **Purpose:** Visualizing sample images helps in inspecting the data to ensure the images and labels are correctly loaded and normalized.
 
@@ -620,7 +620,7 @@ The output will display the specified number of misclassified images with their 
 
 For example:
 
-![alt text](../img/misclassifications.png)
+![alt text](img/misclassifications.png)
 
 > Generating predictions and analyzing misclassified instances is a crucial step to gain insights into the model's performance. By examining misclassified images, one can identify potential weaknesses in the model and areas for improvement, such as specific digits that are frequently misclassified.
 
